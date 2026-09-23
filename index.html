@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1220"><title>Destiny Solar | Business Manager</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">DS</div><div><strong>Destiny Solar</strong><small>Business Manager</small></div></div>
+  <nav id="nav">
+    <button class="nav-item active" data-page="dashboard">⌂ <span>Dashboard</span></button>
+    <button class="nav-item" data-page="sales">▣ <span>Sales</span><b>3</b></button>
+    <button class="nav-item" data-page="projects">◈ <span>Projects</span></button>
+    <button class="nav-item" data-page="inventory">▤ <span>Inventory</span><b>5</b></button>
+    <button class="nav-item" data-page="purchases">⇩ <span>Purchases</span></button>
+    <button class="nav-item" data-page="customers">♙ <span>Customers</span></button>
+    <button class="nav-item" data-page="suppliers">♧ <span>Suppliers</span></button>
+    <button class="nav-item" data-page="service">⚙ <span>Service & Warranty</span></button>
+    <button class="nav-item" data-page="finance">₹ <span>Finance</span></button>
+    <button class="nav-item" data-page="reports">▥ <span>Reports</span></button>
+    <button class="nav-item" data-page="settings">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="sidebar-foot"><div class="status-dot"></div><span>Demo environment</span></div>
+</aside>
+<main class="main">
+<header class="topbar"><button class="mobile-menu" id="menu">☰</button><div class="crumb" id="crumb">Dashboard</div><div class="top-actions"><button class="icon-btn" title="Search" id="searchBtn">⌕</button><button class="icon-btn" title="Notifications">♢</button><div class="user"><div class="avatar">DS</div><div><strong>Admin</strong><small>Owner</small></div></div></div></header>
+<section class="content" id="content"></section>
+</main>
+</div>
+<div class="toast" id="toast"></div>
+<div class="modal-backdrop" id="modal"><div class="modal"><div class="modal-head"><h3 id="modalTitle">Add item</h3><button onclick="closeModal()">×</button></div><div id="modalBody"></div></div></div>
+<script src="app.js"></script>
+</body></html>
